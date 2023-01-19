@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fragment - M Izzudin</string>
+    <string name="tv1">SIGN IN</string>
+    <string name="email">Username / Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login">SIGN IN</string>
+    <string name="tv2">Forgot Password?</string>
+    <string name="tv3">Don\'t have a account?</string>
+    <string name="tv4">SIGN UP</string>
+    <string name="name">Muhammad Izzudin</string>
+    <string name="nim">32602000047</string>
+</resources>

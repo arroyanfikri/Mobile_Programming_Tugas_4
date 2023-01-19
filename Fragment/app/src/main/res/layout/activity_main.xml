@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <ImageView
+        android:id="@+id/shape1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/random_shape1"
+        android:layout_gravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/form"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="start"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="#FFEFEFEF"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shape1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tv1"
+                android:fontFamily="@font/lemonmilk_reguler"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingTop="40dp"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:hint="@string/email"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="7dp"
+                android:textSize="16sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="5dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:fontFamily="@font/lemonmilk_reguler"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:background="#FF27316E"
+                android:text="@string/btn_login"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:text="@string/tv2"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv4"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="30dp"
+                    android:textColor="#FF27316E"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/shape2"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/random_shape2"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
